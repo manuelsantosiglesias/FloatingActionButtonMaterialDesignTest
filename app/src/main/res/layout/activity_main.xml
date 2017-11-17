@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.santos.manu.floatingactionbuttonmaterialdesigntest.MainActivity">
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:fab_addButtonColorNormal="#ffffff"
+        app:fab_addButtonColorPressed="#0000ff"
+        app:fab_addButtonPlusIconColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:fab_labelStyle="@style/menu_labels_style"
+        app:layout_constraintVertical_bias="0.963">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/abtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorPressed="#025102"
+            app:fab_icon="@drawable/ic_actionbtn"
+            app:fab_title="Acción 1"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/abtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorPressed="#025102"
+            app:fab_icon="@drawable/ic_actionbtn2"
+            app:fab_title="Acción 2"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</android.support.constraint.ConstraintLayout>
